@@ -1,0 +1,14 @@
+.drop-zone {
+  border: dotted 3px lightgray;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.file-over {
+  background-color: #eee;
+}

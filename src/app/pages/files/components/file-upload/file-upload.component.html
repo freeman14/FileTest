@@ -1,0 +1,22 @@
+<div>
+  <div
+    ng2FileDrop
+    [ngClass]="{ 'file-over': hasBaseDropZoneOver }"
+    (fileOver)="fileOverBase($event)"
+    (onFileDrop)="onFileDrop($event)"
+    [uploader]="uploader"
+    class="drop-zone"
+  >
+    Base drop zone
+  </div>
+
+  <div>
+    <input
+      accept=".txt"
+      type="file"
+      ng2FileSelect
+      [uploader]="uploader"
+      (onFileSelected)="onFileDrop($event)"
+    />
+  </div>
+</div>

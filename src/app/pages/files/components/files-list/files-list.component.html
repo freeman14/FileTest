@@ -1,0 +1,8 @@
+<div>
+  <div *ngIf="!(fileService.files$ | async).length">No uploaded files</div>
+
+  <app-file
+    [file]="file"
+    *ngFor="let file of fileService.files$ | async"
+  ></app-file>
+</div>
